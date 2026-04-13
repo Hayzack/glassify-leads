@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassify | Transformando tus espacios con Smart Film</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Background Layers -->
+    <div class="background-base"></div>
+    <div class="background-glass" id="smart-glass-layer"></div>
+
+    <div class="content-wrapper">
+        <header class="header">
+            <h1 class="logo">Glassify</h1>
+            <p class="tagline">Controla la privacidad y luz de tus cristales, con un solo clic.</p>
+        </header>
+
+        <main class="main-container">
+            <div class="glass-panel form-container">
+                <h2>¿Listo para innovar?</h2>
+                <p>Déjanos tus datos y un especialista se pondrá en contacto contigo.</p>
+                
+                <!-- Action points to FormSubmit.co -->
+                <form action="https://formsubmit.co/saluah.elmatni22@gmail.com" method="POST" id="lead-form">
+                    
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_subject" value="¡Nuevo Lead de Glassify!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://garcia.test/thank-you" id="next-url"> <!-- Will be handled by JS or fallback -->
+
+                    <div class="input-group">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" name="Nombre" required placeholder="Ej: Juan Pérez">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="Email" required placeholder="correo@ejemplo.com">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="Telefono" required placeholder="+58 414 1234567">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="company">Empresa</label>
+                        <input type="text" id="company" name="Empresa" required placeholder="Nombre de la empresa">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="role">Cargo</label>
+                        <input type="text" id="role" name="Cargo" required placeholder="Gerente de Proyectos">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="project-type">Tipo de proyecto</label>
+                        <select id="project-type" name="Tipo_de_Proyecto" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="Oficinas Corporativas">Oficinas Corporativas</option>
+                            <option value="Residencial">Residencial</option>
+                            <option value="Comercial/Retail">Comercial / Retail</option>
+                            <option value="Hoteleria">Hotelería</option>
+                            <option value="Hospitales/Clinicas">Hospitales / Clínicas</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="source">¿De dónde nos conoces?</label>
+                        <select id="source" name="Fuente_de_Origen" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Google">Búsqueda de Google</option>
+                            <option value="Recomendacion">Recomendación</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <label for="comments">Comentarios adicionales (Opcional)</label>
+                        <textarea id="comments" name="Comentarios" rows="3" placeholder="Cuéntanos un poco más sobre lo que tienes en mente..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="submit-button">
+                        Solicitar Asesoría
+                        <span class="btn-glow"></span>
+                    </button>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; <span id="year"></span> Glassify. Todos los derechos reservados.</p>
+            <p>Contáctanos: <a href="tel:+584149246237" class="phone-link">+58 414-9246237</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
